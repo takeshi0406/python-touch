@@ -21,6 +21,10 @@ class PythonTouch:
             self.logger.error(f"{directory} is not directory.")
             return
 
+        if not (path.exists() or path.parent.exists()):
+            self.logger.error(f"{directory} is not found.")
+            return
+
         path.mkdir(exist_ok=True)
 
         for p in self._iter_recursively(path):

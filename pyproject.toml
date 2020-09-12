@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "python-touch"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["takeshi0406 <sci.and.eng@gmail.com>"]
 license = "MIT"
+readme = 'README.md'
 
 [tool.poetry.dependencies]
 python = "^3.7"
